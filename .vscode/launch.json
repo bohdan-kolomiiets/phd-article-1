@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Python: Debug current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "justMyCode": false  // <-- This allows stepping into libraries
+        }
+    ]
+}

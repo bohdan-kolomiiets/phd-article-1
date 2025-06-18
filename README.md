@@ -1,3 +1,3 @@
-# Codebase for article "Improving sEMG Gesture Classification with Transfer Learning: Accuracy, Stability, and Low-Data Adaptation"
+# Codebase for article "Improving EMG Signal Classification with Transfer Learning Under Low-Data and Cross-Subject Conditions"
 
 TODO: files will be added later.
