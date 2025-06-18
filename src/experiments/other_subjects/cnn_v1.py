@@ -18,13 +18,14 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
 
-from utils.print_with_date import printd
-from utils.model_checkpoint import ModelCheckpoint
-from utils.libemg_deep_learning import make_data_loader
-from utils.libemg_offline_data_handler_utils import get_standardization_params, apply_standardization_params, split_data_on_3_sets_by_reps
-from utils.neural_networks.libemg_cnn_v1 import CNN_V1 as CNN
-from utils.subject_repetitions_cross_validation import generate_3_repetitions_folds
-from libemg_3dc.utils.training_experiments import TrainingExperiment, TrainingExperiments, NeuralNetworkOtherSubjectsTrainingExperiment
+from src.utils.common.print_with_date import printd
+from src.utils.common.collection_utils import group_by
+from src.utils.common.model_checkpoint import ModelCheckpoint
+from src.utils.libemg.libemg_deep_learning import make_data_loader
+from src.utils.libemg.libemg_offline_data_handler_utils import get_standardization_params, apply_standardization_params, split_data_on_3_sets_by_reps
+from src.utils.libemg.neural_networks.libemg_cnn_v1 import CNN_V1 as CNN
+from src.utils.libemg.subject_repetitions_cross_validation import generate_3_repetitions_folds
+from src.utils.libemg.training_experiments import TrainingExperiment, TrainingExperiments, NeuralNetworkOtherSubjectsTrainingExperiment
 
 def add_model_graph_to_tensorboard(model, dataloader, tensorboard_writer):
     data, labels = next(iter(dataloader))

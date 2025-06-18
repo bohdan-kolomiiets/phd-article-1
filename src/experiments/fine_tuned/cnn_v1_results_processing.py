@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
 
-from libemg_3dc.utils.training_experiments import TrainingExperiments, NeuralNetworkFineTunedTrainigExperiment
+from src.utils.libemg.training_experiments import TrainingExperiments, NeuralNetworkFineTunedTrainigExperiment
 
 agrs_parser = argparse.ArgumentParser(description="Compare two classification models")
 agrs_parser.add_argument('--transfer_learning_strategy', type=str, required=False, default='finetune_with_fc_reset', help='pass "finetune_with_fc_reset" or "finetune_without_fc_reset"')

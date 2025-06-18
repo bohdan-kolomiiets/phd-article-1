@@ -1,6 +1,6 @@
 import uuid
 import numpy as np
-from libemg_3dc.utils.training_experiments import TrainingExperiment, NeuralNetworkSingleSubjectTrainingExperiment
+from utils.libemg.training_experiments import TrainingExperiment, NeuralNetworkSingleSubjectTrainingExperiment
 
 def test_single_subject_from_json_and_back():
     test_id = str(uuid.uuid4())

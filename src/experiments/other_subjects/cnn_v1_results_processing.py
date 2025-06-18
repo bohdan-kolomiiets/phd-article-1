@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
 
-from libemg_3dc.utils.training_experiments import TrainingExperiments, NeuralNetworkOtherSubjectsTrainingExperiment
+from src.utils.libemg.training_experiments import TrainingExperiments, NeuralNetworkOtherSubjectsTrainingExperiment
 
 
 if __name__ == "__main__":
