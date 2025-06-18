@@ -113,8 +113,6 @@ batch_size = 64
 adam_learning_rate = 1e-3
 adam_weight_decay=0 # 1e-5
 
-transfer_strategy = 'feature_extractor_with_fc_reset'
-
 processed_experiments = TrainingExperiments.load(path='libemg_3dc/prove_pretraining_helps/other_subjects/cnn_v1_results.json')
 
 # training_results.cleanup(

@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
 
-from libemg_3dc.utils.training_experiments import TrainingExperiments, NeuralNetworkSingleSubjectTrainingExperiment, NeuralNetworkOtherSubjectsTrainingExperiment, NeuralNetworkFineTunedTrainigExperiment
+from utils.libemg.training_experiments import TrainingExperiments, NeuralNetworkSingleSubjectTrainingExperiment, NeuralNetworkOtherSubjectsTrainingExperiment, NeuralNetworkFineTunedTrainigExperiment
 
 inter_subjects_experiments = TrainingExperiments.load(path='libemg_3dc/prove_pretraining_helps/other_subjects/cnn_v1_results(ready).json')
 inter_subjects_experiments = [cast(NeuralNetworkOtherSubjectsTrainingExperiment, result) for result in inter_subjects_experiments.data if isinstance(result, NeuralNetworkOtherSubjectsTrainingExperiment)]

@@ -5,8 +5,8 @@ import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 from libemg.datasets import *
 
-from utils.early_stopping import EarlyStopping
-from utils.model_checkpoint import ModelCheckpoint
+from src.utils.common.early_stopping import EarlyStopping
+from src.utils.common.model_checkpoint import ModelCheckpoint
 
 class CNN_V1(nn.Module):
     def __init__(self, n_output, n_channels, n_samples, n_filters=256, generator=None):
